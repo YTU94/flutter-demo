@@ -123,6 +123,14 @@ class SecondScreen extends StatelessWidget {
         children: [
           titleSection,
           textSection,
+          ElevatedButton(
+            onPressed: () {
+              // Navigate back to the first screen by popping the current route
+              // off the stack.
+              Navigator.pop(context);
+            },
+            child: Text('999'),
+          ),
         ],
       ),
       // body: Center(
@@ -336,6 +344,14 @@ class MyApp1 extends StatelessWidget {
             titleSection,
             buttonSection,
             textSection,
+            ElevatedButton(
+              onPressed: () {
+                // Navigate back to the first screen by popping the current route
+                // off the stack.
+                Navigator.pop(context);
+              },
+              child: Text('999'),
+            ),
           ],
         ),
       ),
